@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter VII — The 7th Date with You</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #080a0f; color: #e2e8f0; }
+    .font-serif-romantic { font-family: 'Playfair Display', Georgia, serif; }
+    @keyframes float-slow { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+    .animate-float { animation: float-slow 7s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-[#080a0f] text-slate-100 min-h-screen">
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-[#080a0f]/80 backdrop-blur-md border-b border-slate-800/80 px-6 py-4 flex items-center justify-between gap-8">
+    <a href="#" class="text-lg font-bold tracking-tight text-white whitespace-nowrap shrink-0 font-serif-romantic">Chapter VII</a>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+      <a href="#proposal" class="hover:text-rose-400 transition-colors whitespace-nowrap">Date #7 Proposal</a>
+      <a href="#memories" class="hover:text-rose-400 transition-colors whitespace-nowrap">Memory Lane</a>
+      <a href="#reasons" class="hover:text-rose-400 transition-colors whitespace-nowrap">The 7 Reasons</a>
+      <a href="#letters" class="hover:text-rose-400 transition-colors whitespace-nowrap">Love Letters</a>
+    </nav>
+    <a href="#proposal" class="px-4 py-2 text-xs font-semibold bg-gradient-to-r from-rose-600 to-amber-600 rounded-lg hover:from-rose-500 hover:to-amber-500 transition-all text-white whitespace-nowrap shrink-0 shadow-lg shadow-rose-950/40">
+      Answer Date #7
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-[85vh] flex items-center justify-center px-6 py-20 overflow-hidden border-b border-slate-800/60">
+    <div class="absolute inset-0 bg-gradient-to-b from-rose-950/20 via-[#080a0f]/90 to-[#080a0f] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+      <p class="text-xs uppercase tracking-widest text-rose-400 font-semibold">Six Cherished Dates · One Sacred Question</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-serif-romantic text-white leading-tight">
+        Will You Go on <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-amber-200 to-rose-300">Date #7</span> With Me?
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+        From foggy morning chai in the Nilgiri hills to starlit midnight conversations. Here is every reason why walking beside you is the greatest gift of my life.
+      </p>
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <a href="#proposal" class="px-8 py-3.5 text-base font-semibold bg-rose-600 hover:bg-rose-500 text-white rounded-xl shadow-xl shadow-rose-900/50 transition-all transform hover:-translate-y-0.5">
+          See The 7th Date Invitation ❤️
+        </a>
+        <a href="#memories" class="px-6 py-3.5 text-base font-medium bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 rounded-xl transition-all">
+          Explore Our Memories (Dates 1–6)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Date #7 Proposal -->
+  <section id="proposal" class="py-24 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-xs uppercase tracking-widest text-amber-400 font-medium">Chapter VII · The Invitation</span>
+      <h2 class="text-3xl md:text-4xl font-bold font-serif-romantic text-white mt-2">The Official Date #7 Question</h2>
+      <p class="text-slate-400 text-sm mt-2">A mountain getaway crafted just for you.</p>
+    </div>
+
+    <div class="bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden text-center space-y-8">
+      <div class="max-w-2xl mx-auto space-y-4">
+        <h3 class="text-2xl md:text-3xl font-serif-romantic font-semibold text-rose-200">
+          "Pack a warm sweater, your sweetest smile, and let me take care of every single minute."
+        </h3>
+        <p class="text-slate-300 text-base leading-relaxed">
+          I want to take you to the mist-draped hill station trails of India—where the air smells of fresh eucalyptus, where warm cutting chai warms our cold fingers, and where I can hold your hand without a care in the world.
+        </p>
+      </div>
+
+      <div id="proposal-buttons" class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <button id="yes-btn" onclick="acceptDate()" class="px-10 py-4 text-lg font-bold bg-gradient-to-r from-rose-600 to-pink-600 text-white rounded-2xl shadow-xl shadow-rose-900/50 hover:scale-105 transition-all">
+          YES, Absolutely! ❤️
+        </button>
+        <button id="playful-btn" onmouseover="dodgeButton()" onclick="dodgeButton()" class="px-8 py-4 text-base font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-2xl border border-slate-700 transition-all">
+          Let me think 🤔
+        </button>
+      </div>
+
+      <div id="accepted-card" class="hidden text-left bg-rose-950/20 border border-rose-500/40 rounded-2xl p-6 md:p-8 space-y-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-rose-500/20 border border-rose-500 flex items-center justify-center text-rose-400 text-2xl font-bold">✓</div>
+          <div>
+            <h4 class="text-xl font-bold font-serif-romantic text-white">Date #7 Confirmed!</h4>
+            <p class="text-xs text-rose-300">Official boarding pass to my heart & the misty hills</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-300 pt-2 border-t border-rose-900/40">
+          <div><strong class="text-slate-400">Destination:</strong> Munnar & Nilgiri Hills</div>
+          <div><strong class="text-slate-400">Setting:</strong> Sunrise Mist & Cozy Campfire</div>
+          <div><strong class="text-slate-400">Your Only Job:</strong> Being the gorgeous human you are</div>
+          <div><strong class="text-slate-400">My Promise:</strong> Unlimited chai, warm hugs & zero worries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Memory Lane (Dates 1-6) -->
+  <section id="memories" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+    <div class="text-center mb-16">
+      <span class="text-xs uppercase tracking-widest text-rose-400 font-semibold">Our Journey Together</span>
+      <h2 class="text-3xl md:text-5xl font-bold font-serif-romantic text-white mt-2">Memory Lane: Dates 1 Through 6</h2>
+      <p class="text-slate-400 text-sm mt-3 max-w-xl mx-auto">Every date was a chapter that led to where we are today.</p>
+    </div>
+
+    <div id="memories-container" class="space-y-12">
+      <!-- Injected by script -->
+    </div>
+  </section>
+
+  <!-- Love Letters -->
+  <section id="letters" class="py-20 px-6 max-w-4xl mx-auto border-t border-slate-800/80">
+    <div class="text-center mb-14">
+      <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Words From My Heart</span>
+      <h2 class="text-3xl md:text-4xl font-bold font-serif-romantic text-white mt-2">The Love Letters Vault</h2>
+    </div>
+    <div id="letters-container" class="space-y-8">
+      <!-- Injected by script -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-slate-900 text-center text-xs text-slate-500">
+    <p class="font-serif-romantic text-sm text-slate-400 mb-2">Created with endless love for our 7th date</p>
+    <p>Saved permanently in our hearts and memory</p>
+  </footer>
+
+  <script>
+    const memories = [{"id":"date-1","dateNumber":1,"title":"The First Stolen Glance","date":"October 14, 2025","location":"Cafe Terra & Quiet Garden Nook","hillStationTag":"The Beginning","storySnippet":"The four-hour coffee date where an entire cafe closed down around us without either of us noticing.","fullStory":"We originally agreed to just grab a quick 30-minute espresso between errands. But the moment you smiled while talking about your secret dreams, time ceased to have any meaning. We talked about everything from childhood rain memories to our deepest fears. When the barista politely told us they were closing for the night, we looked outside and realized the stars were already shining.","photoUrl":"/src/assets/images/ooty_pine_mist_1793216484171.jpg","favoriteMoment":"When you laughed so hard you had to hide your face in your scarf.","weatherMood":"Drizzly afternoon with warm hazelnut steam"},{"id":"date-2","dateNumber":2,"title":"Gulmohar Boulevards & Shared Umbrella","date":"November 02, 2025","location":"Rain-Washed Old Town Boulevards","hillStationTag":"Monsoon Magic","storySnippet":"A sudden evening downpour and one tiny umbrella meant for a single person.","fullStory":"The skies opened up with sudden monsoon showers. I had one small folding umbrella that could barely shelter one person, so we walked pressed shoulder-to-shoulder under the glowing amber streetlamps. Both of our outside shoulders got completely soaked, but neither of us cared. That was the night I realized I never wanted to walk in the rain with anyone else.","photoUrl":"/src/assets/images/darjeeling_golden_hour_1793216485026.jpg","favoriteMoment":"The way you looked at the rain drops catching the street lights.","weatherMood":"Heavy evening downpour & petrichor"},{"id":"date-3","dateNumber":3,"title":"Chasing the Sunrise at Nandi Hills","date":"December 18, 2025","location":"Nandi Hills Viewpoint, Karnataka","hillStationTag":"First Mountain Sunrise","storySnippet":"A 4:30 AM drive through mountain mist, clutching hot cutting chai as the fog broke.","fullStory":"We woke up before the rest of the world, put on our oversized wool sweaters, and drove up the serpentine mountain roads in near darkness. As the first crimson rays pierced through the dense valley fog, you stood at the cliff edge wrapped in my jacket. We drank steaming ginger chai from paper cups in silence, just listening to the wind.","photoUrl":"/src/assets/images/munnar_tea_hills_1793216483464.jpg","favoriteMoment":"Your freezing nose warming up against my neck when you leaned in.","weatherMood":"11°C mountain chill, ocean of white clouds"},{"id":"date-4","dateNumber":4,"title":"Secret Rooftop Under the Stars","date":"January 12, 2026","location":"Terrace Haven & Handwritten Playlist","hillStationTag":"Midnight Secrets","storySnippet":"A pile of blankets, fairy lights, and discussing the universe until 3 in the morning.","fullStory":"No fancy reservations, just fairy lights taped to the terrace railing, a thermos of spiced hot chocolate, and a speaker playing soft acoustic melodies. We lay side by side on floor cushions pointing out constellations, talking about where we want to be in ten years. You fell asleep with your head resting gently on my chest.","photoUrl":"/src/assets/images/manali_snow_peaks_1793216484230.jpg","favoriteMoment":"Watching your breath form little clouds in the midnight air.","weatherMood":"Crisp clear starry sky, gentle breeze"},{"id":"date-5","dateNumber":5,"title":"The Nilgiri Pine Forest Trail","date":"February 14, 2026","location":"Ooty & Coonoor Foggy Hills, Tamil Nadu","hillStationTag":"High Altitude Romance","storySnippet":"Walking through ancient towering pines draped in silver mist, breathing in eucalyptus air.","fullStory":"We escaped the noise of city life into the Nilgiri hills. The afternoon mist rolled in so thick you could barely see ten paces ahead. Every branch was dripping with dew, and the scent of wild eucalyptus and pine needles filled the cold air. We stopped by a vintage wooden bench, and you whispered things that made my heart race faster than any mountain climb.","photoUrl":"/src/assets/images/ooty_pine_mist_1793216484171.jpg","favoriteMoment":"Stopping mid-trail just to hold you while the fog swirled around us.","weatherMood":"Dense rolling mist, 14°C, pine scent"},{"id":"date-6","dateNumber":6,"title":"The Wooden Cabin & Campfire Glow","date":"March 28, 2026","location":"Manali Pine Ridge Sanctuary, Himachal","hillStationTag":"Himalayan Warmth","storySnippet":"Snow peaks in the distance, crackling pine logs, and slow dancing in warm socks.","fullStory":"Perched high in the valleys with snow-capped ridges watching over us, we spent the evening next to an old stone hearth. Firewood crackled, casting dancing golden shadows on the wooden beams. We cooked dinner together, burnt the first paratha laughing hysterically, and slow-danced without any music playing—just the sound of mountain wind outside.","photoUrl":"/src/assets/images/manali_snow_peaks_1793216484230.jpg","favoriteMoment":"The quiet look in your eyes by the firelight that made me know you are my home.","weatherMood":"Snow dusk, roaring fireplace, absolute stillness"}];
+    const letters = [{"id":"letter-1","title":"To the One Who Turned Fog Into Magic","date":"October 2026","author":"Forever Yours","excerpt":"Before you, mountains were just stone and rain was just weather. With you, every mist feels like poetry.","content":"My dearest love,\n\nThey say that when you find the right person, the world doesn't suddenly change—instead, you finally see it in high definition. That is what you have done to my life.\n\nI still remember the first time we stood together watching the fog sweep across the valley. Everyone else was hurrying indoors, shivering from the cold. But you leaned forward with that luminous smile, caught a drop of mountain dew on your fingertip, and told me that mist is just the earth dreaming out loud.\n\nSix dates have flown by, each one etched into my mind like sacred verses. Every shared laugh, every sleepy morning conversation over cutting chai, every time your hand gently finds mine inside my jacket pocket—they are the happiest minutes of my existence.\n\nAnd so, here we stand at the threshold of our 7th chapter. Seven has always been the number of completeness, of deep journeys, of sacred vows. I don't just want an ordinary evening; I want to steal you away to where the clouds touch the earth and remind you how deeply and hopelessly in love with you I am.\n\nWill you walk with me into Chapter VII?","paperTheme":"midnight","waxSealColor":"#e11d48"},{"id":"letter-2","title":"The Little Things (That Aren't Little At All)","date":"September 2026","author":"Your Biggest Admirer","excerpt":"It is never just the grand landscapes. It is the quiet choreography of how you exist.","content":"My darling,\n\nPeople often write poems about grand gestures, lightning bolts, and epic voyages. But what made me fall irrevocably in love with you are the small, unscripted moments that only I get to witness.\n\nThe unconscious way you hum when you're focusing on something you love.\nThe gentle crinkle at the corners of your eyes when you laugh so honestly that you lose your breath.\nHow you always ensure everyone else is warm and comfortable before you even think about yourself.\nThe way you look when you take that very first sip of hot chai in the morning mist—pure serenity.\n\nEvery date with you has felt like unwrapping a rare gift. On our 7th date, I want to give you back all that warmth multiplied by a thousand. Pack a warm shawl, because I've planned an evening that honors everything that makes you who you are.","paperTheme":"parchment","waxSealColor":"#d97706"},{"id":"letter-3","title":"A Promise for Chapter VII and Beyond","date":"Present Day","author":"Always & Always","excerpt":"I promise to always hold the umbrella tilted your way, and to always choose you.","content":"My heart,\n\nIf our first six dates were the prelude, Date #7 is our anthem. \n\nI promise to always listen to your longest stories with the same awe as our first night together.\nI promise to always hold the umbrella tilted over your shoulder, even if mine gets completely drenched.\nI promise to pack extra warm socks on cold mountain trips, and to never let you carry heavy loads when my shoulders are right here.\nAnd most of all, I promise to never take for granted the miracle of your hand in mine.\n\nLet's make Date #7 unforgettable. Say yes, and let me take care of the rest.","paperTheme":"misty","waxSealColor":"#9333ea"}];
+    let playfulQuotes = [
+      "Are you sure? There will be hot chocolate! ☕",
+      "Wait, what if I carry your bag the entire trek? 🎒",
+      "Warning: Refusal triggers a million compliments! ✨",
+      "Only if you hold my hand in the cold mist? 🤝",
+      "Okay fine, you got me! I say YES! ❤️"
+    ];
+    let playfulIndex = 0;
+
+    function dodgeButton() {
+      const btn = document.getElementById('playful-btn');
+      btn.innerText = playfulQuotes[playfulIndex % playfulQuotes.length];
+      playfulIndex++;
+      if (playfulIndex >= playfulQuotes.length) {
+        btn.classList.add('bg-rose-600', 'text-white');
+        btn.onclick = acceptDate;
+      }
+    }
+
+    function acceptDate() {
+      document.getElementById('proposal-buttons').classList.add('hidden');
+      document.getElementById('accepted-card').classList.remove('hidden');
+    }
+
+    // Render memories
+    const memContainer = document.getElementById('memories-container');
+    memories.forEach((mem, idx) => {
+      const card = document.createElement('div');
+      card.className = "bg-slate-900/60 border border-slate-800/90 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center";
+      card.innerHTML = `
+        <div class="w-full md:w-1/2 rounded-xl overflow-hidden aspect-[4/3] bg-slate-800 relative">
+          <img src="${mem.photoUrl}" alt="${mem.title}" class="w-full h-full object-cover" />
+          <span class="absolute top-3 left-3 px-3 py-1 bg-black/60 backdrop-blur-md rounded-md text-xs font-semibold text-rose-300">Date #${mem.dateNumber}</span>
+        </div>
+        <div class="w-full md:w-1/2 space-y-4">
+          <div class="text-xs text-slate-400">
+            <span>${mem.date}</span> · <span>${mem.location}</span>
+          </div>
+          <h3 class="text-2xl font-bold font-serif-romantic text-white">${mem.title}</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">${mem.fullStory}</p>
+          <div class="pt-3 border-t border-slate-800 text-xs text-rose-300/90">
+            <strong>Favorite memory:</strong> ${mem.favoriteMoment}
+          </div>
+        </div>
+      `;
+      memContainer.appendChild(card);
+    });
+
+    // Render letters
+    const lettersContainer = document.getElementById('letters-container');
+    letters.forEach(letter => {
+      const el = document.createElement('div');
+      el.className = "bg-slate-900/80 border border-slate-800 rounded-2xl p-8 space-y-4";
+      el.innerHTML = `
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+          <h3 class="text-xl font-bold font-serif-romantic text-rose-200">${letter.title}</h3>
+          <span class="text-xs text-slate-400">${letter.date}</span>
+        </div>
+        <div class="text-sm text-slate-300 whitespace-pre-line leading-relaxed font-light font-serif-romantic text-base">
+          ${letter.content}
+        </div>
+        <div class="text-right text-xs text-amber-300 pt-2">— ${letter.author}</div>
+      `;
+      lettersContainer.appendChild(el);
+    });
+  </script>
+</body>
+</html>
